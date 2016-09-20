@@ -14,7 +14,7 @@
                 <!-- Can find different text randomly put here ( such as irc files ) -->
             </home>
             <log>
-                <!-- Logs of any done to the machine, such as hack, copy, deletion etc ..., delection in log doesn't cause a message to appear here-->
+                <!-- Logs of any done to the machine, such as hack, copy, deletion etc ..., deletion in log doesn't cause a message to appear here-->
             </log>
         </directory>
         <user>
@@ -34,5 +34,26 @@
             <p1433></p1433><!--sql-->
             <p6667></p6667><!--irc-->
         </port>
+    </pc>
+    <pc type="global">
+        <ip>111.111.111.111</ip> <!-- Can be stable, to be seen-->
+        <chat>
+                <!-- contain history of chat -->
+            <message><!-- exemple of a message -->
+                <text>blablabla gonna kill you bla</text>
+                <from>assassin</from>
+            </message>
+        </chat>
+        <darkStore><!-- The store-->
+            <item><!--An exemple of something found in it-->
+                <name>Dark army assassination</name>
+                <price>10 000</price>
+                <description>Send an assassin after a player to kill him, it takes one to two minutes</description>
+            </item>
+        </darkStore>
+        <news>
+            <!--In this will be found any "important" news in the game-->
+            <post>xxxxxx just alarmed the FBI and is stuck for 2 minutes</post>
+        </news>
     </pc>
 </parc>
