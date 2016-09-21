@@ -11,7 +11,7 @@
                 <!-- stable through the game, a deletion cause the player to lose -->
             </sys>
             <home>
-                <!-- Can find different text randomly put here ( such as irc files ) -->
+                <!-- Can find different text randomly put here ( such as irc files ), Can countain folders-->
             </home>
             <log>
                 <!-- Logs of any done to the machine, such as hack, copy, deletion etc ..., deletion in log doesn't cause a message to appear here-->
