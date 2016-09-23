@@ -3,12 +3,11 @@
     targetNamespace="http: //xml.netbeans.org/schema/etudiant"
     xmlns="http: //xml.netbeans.org/schema/etudiant"
     elementFormDefault="qualified">
-    <!-- Il faut encore faire en sort que le parc accepte
-    le global ou le faire externe a ce fichier xml,
-    choix à faire, donnez votre avis en commentaire -->
-    <!-- Les TODO
-    présent sont encore a déterminés,un choix
-    de representation va devoir être pris -->
+    <!-- We need to make this schema accept the global server ( chat + news etc ...)
+        and for that we need to discuss it, pu in comment what you want ;) -->
+    <!-- the TODO's
+    still present are a choice to make for the format of the files in a pc
+    tell in comments what you think we should do ;) -->
     <xsd:element name="parc" type="Parc"/>
     <xsd:complexType name="Parc">
         <xsd:sequence>
@@ -46,7 +45,7 @@
 
     <xsd:complexType name="Directory">
         <xsd:sequence>
-            <xsd:sdelement name="bin" type=""/><!--TODO-->
+            <xsd:element name="bin" type=""/><!--TODO-->
             <xsd:element name="sys" type=""/><!--TODO-->
             <xsd:element name="home" type=""/><!--TODO-->
             <xsd:element name="log" type=""/><!--TODO-->
