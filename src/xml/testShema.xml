@@ -1,1 +1,89 @@
+<?xml  version="1.0" encoding="UTF-8"?>
+<xsd:schema  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http: //xml.netbeans.org/schema/etudiant"
+    xmlns="http: //xml.netbeans.org/schema/etudiant"
+    elementFormDefault="qualified">
+    <!-- Il faut encore faire en sort que le parc accepte
+    le global ou le faire externe a ce fichier xml,
+    choix à faire, donnez votre avis en commentaire -->
+    <!-- Les TODO
+    présent sont encore a déterminés,un choix
+    de representation va devoir être pris -->
+    <xsd:element name="parc" type="Parc"/>
+    <xsd:complexType name="Parc">
+        <xsd:sequence>
+            <xsd:element name="pc" type="Pc"/>
+        </xsd:sequence>
+    </xsd:complexType>
 
+    <xsd:complexType name="Pc">
+        <xsd:sequence>
+            <xsd:element name="ip" type="Ip"/>.
+            <xsd:element name="directory" type="Directory"/>
+            <xsd:element name="user" type="User"/>
+            <xsd:element name="pcLevel" type="PcLevel"/>
+            <xsd:element name="status" type="Status"/>
+            <xsd:element name="port" type="Port"/>
+        </xsd:sequence>
+        <xsd:attribute name="type" type="Tpc">
+        </xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:simpleType name="Tpc">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="hacker"/>
+            <!--<xsd:enumeration value="global"/>-->
+            <xsd:enumeration value="server"/>
+            <xsd:enumeration value="pc"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="Ip">
+        <xsd:restriction base="xsd:string">
+            <pattern value="\d{3}.\d{3}.d\{3}.d{3}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:complexType name="Directory">
+        <xsd:sequence>
+            <xsd:sdelement name="bin" type=""/><!--TODO-->
+            <xsd:element name="sys" type=""/><!--TODO-->
+            <xsd:element name="home" type=""/><!--TODO-->
+            <xsd:element name="log" type=""/><!--TODO-->
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="User">
+        <xsd:sequence>
+            <xsd:element name="login" type="xsd:string"/>
+            <xsd:element name="mdp" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="PcLevel">
+        <xsd:sequence>
+            <xsd:element name="ps" type="xsd:integer"/>
+            <xsd:element name="ram" type="xsd:int"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:simpleType name="Status">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="ok"/>
+            <xsd:enumeration value="dead"/>
+            <xsd:enumeration value="arrested"/>
+            <xsd:enumeration value="destroyed"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:complexType name="Port">
+        <xsd:sequence>
+            <xsd:element name="p21" type="xsd:boolean"/>
+            <xsd:element name="p22" type="xsd:boolean"/>
+            <xsd:element name="p25" type="xsd:boolean"/>
+            <xsd:element name="p80" type="xsd:boolean"/>
+            <xsd:element name="p1433" type="xsd:boolean"/>
+            <xsd:element name="p6667" type="xsd:boolean"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>
