@@ -1,8 +1,7 @@
 # HackingGameProject
 *Project title will be updated when project name will be determined. ;)*
 
-&copy; 2016 - Etanlink, Nopest, Tellenn, Thomas Debugger
-, Jérémy (?)
+&copy; 2016 - Etanlink, Nopest, Tellenn, Thomas Debugger, Jérémy (?)
 
 ---------------
 
@@ -27,7 +26,7 @@
 	- [ ] Receive and analyse commands from client
 	- [ ] Execute command
 	- [ ] Return command result
-	- [ ] Generate game resources
+	- [ ] Generate game resources *Tellenn is taking care of that*
 	- [ ] etc, ...
 &nbsp;
 
