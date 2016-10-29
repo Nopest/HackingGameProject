@@ -11,21 +11,19 @@
 
 
 ## II - Tasks list
-*Here how the tasks works : numbers are the estimate difficulty of the tasks (1 = basic)
+*Here how the tasks work : numbers are the estimate difficulty of the tasks (1 = basic)*
 
-First sprint's tasks are :
+#### First sprint's tasks are :
 
 + Client
 	- [ ] 1 - As a client, I want to **communicate with the server through sockets**
 	- [ ] 2 - As a client, I want to **handle data sends by server**
-	- [ ] 4 - As a client, I want to **see the contextual map**
-	- [ ] 4 - As a client, I want **commands auto-completion**	
+		
 &nbsp;
 
 + Server
 	- [ ] 1 - As a server, I want to **communicate with the client through sockets**
-	- [ ] 2 - As a server, I want to **generate game resources** *Tellenn is taking care of that*
-	- [ ] 2 - As a server, I want **players to wait in a lobby**
+	- [ ] 2 - As a server, I want to **generate game resources** - *Tellenn is taking care of that*
 	- [ ] 3 - As a server, I want to **receive and analyse commands from client**
 	- [ ] 3 - As a server, I want to **execute and return the result of the command sent by the client**
 &nbsp;
@@ -34,13 +32,24 @@ First sprint's tasks are :
 	- [ ] 1 - As a player, I want to **choose a nickname in order to astonish everyone during a game**
 &nbsp;
 
+---------------
 
-Second sprint's tasks are :
+#### Second sprint's tasks are :
 *TODO : complete second sprint's tasks*
+
++ Client
+	- [ ] 4 - As a client, I want to **see the contextual map**
+	- [ ] 4 - As a client, I want **commands auto-completion**
+&nbsp;
+
++ Server
+	- [ ] 2 - As a server, I want **players to wait in a lobby**
+&nbsp;
 
 + Player
 	- [ ] 3 - As a player, I want to **chat with others in the lobby**
 	- [ ] 4 - As a player, I want to **watch beautiful .exe commands animation during a game**
+&nbsp;
 
 ---------------
 Made with :heart: with **Markdown** ! :D
