@@ -14,6 +14,7 @@
 *Here how the tasks work : numbers are the estimate difficulty of the tasks (1 = basic)*
 
 #### First sprint's tasks are :
+**DEADLINE : 29 Novembre 2016**
 
 + Client
 	- [ ] 1 - As a client, I want to **communicate with the server through sockets**
