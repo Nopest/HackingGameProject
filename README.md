@@ -17,8 +17,7 @@
 
 + Client
 	- [ ] 1 - As a client, I want to **communicate with the server through sockets**
-	- [ ] 2 - As a client, I want to **handle data sends by server**
-		
+	- [ ] 2 - As a client, I want to **handle data sends by server**	
 &nbsp;
 
 + Server
